@@ -13,7 +13,7 @@
 
 
 
-<title>Surgery Simulation System for Knee Joint Replacement | Yuxin&#39;s website</title>
+<title>Human-like Multi-Agent Navigation based on Knowledge Distillation | Yuxin&#39;s website</title>
 
 
 
@@ -193,7 +193,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Surgery Simulation System for Knee Joint Replacement</h1>
+            <h1 class="post-title">Human-like Multi-Agent Navigation based on Knowledge Distillation</h1>
             
                 <div class="post-meta">
                     
@@ -202,7 +202,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">June 5, 2020&nbsp;&nbsp;16:09:33</a>
+                        Date: <a href="#">May 1, 2022&nbsp;&nbsp;10:58:02</a>
                         </span>
                     
                     
@@ -211,12 +211,12 @@
         </header>
 
         <div class="post-content">
-            <h2 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND:"></a><strong>BACKGROUND:</strong></h2><p>Utilizing three-dimensional models of medical images offers a direct visual reference for healthcare professionals. The precise reconstruction of the three-dimensional structure of lower limbs is crucial for effective surgical planning.</p>
-<h2 id="OBJECTIVE"><a href="#OBJECTIVE" class="headerlink" title="OBJECTIVE:"></a><strong>OBJECTIVE:</strong></h2><p>To accomplish the reconstruction of the three-dimensional structure through the utilization of continuous Magnetic Resonance Imaging (MRI) and computed tomography (CT) images.</p>
-<h2 id="METHODS"><a href="#METHODS" class="headerlink" title="METHODS:"></a><strong>METHODS:</strong></h2><p>Leveraging toolkits such as the Visualization Toolkit (VTK) and Segmentation &amp; Registration Toolkit (ITK), we employed the Ray Casting method to accomplish the three-dimensional construction of lower limb images based on the provided continuous MRI and CT scans. In our developed system, users can interact with the three-dimensional images by clicking the mouse, enabling them to visualize the images from various perspectives and obtain transaxial, coronal, and sagittal sections. Additionally, our system facilitates the evaluation of the optimal location for prosthesis installation.</p>
-<h2 id="RESULTS-AND-CONCLUSION"><a href="#RESULTS-AND-CONCLUSION" class="headerlink" title="RESULTS AND CONCLUSION:"></a><strong>RESULTS AND CONCLUSION:</strong></h2><p>The outcomes indicate that composite volume rendering is a more viable approach for the reconstruction process.</p>
-<p><video src="https://github.com/Gloriamyx/picture/raw/main/p1_2.mp4" controls="controls" width="720" height:auto autoplay="autoplay"></video></p>
-<p><img src="https://github.com/Gloriamyx/picture/raw/main/p1_1.png" alt="img"></p>
+            <h2 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND:"></a><strong>BACKGROUND:</strong></h2><p>In contemporary research, the multi-agent system has become a focal point. In contrast to centralized implementations characterized by extensive calculations and numerous limitations, the decentralized implementation of multi-agent navigation offers advantages such as superior stability and easy deployment. This approach adapts seamlessly from static to dynamic environments and proves effective in complex, unknown environments without requiring a pre-provided map. Despite notable advancements in multi-agent navigation, there remains a gap in achieving the mobility efficiency, trajectory predictability, and collision avoidance flexibility exhibited by humans in their environment.</p>
+<h2 id="OBJECTIVE"><a href="#OBJECTIVE" class="headerlink" title="OBJECTIVE:"></a><strong>OBJECTIVE:</strong></h2><p>The goal is to introduce a novel fusion network framework for learning a navigation strategy enabling agents to produce human-like trajectories while avoiding collisions in a completely decentralized environment.</p>
+<h2 id="METHODS"><a href="#METHODS" class="headerlink" title="METHODS:"></a><strong>METHODS:</strong></h2><p>Firstly, intelligent agents performing navigation tasks are modeled based on Markov decision processes. The observation and action spaces of the agents are constrained by the real environment’s motion limitations. Additionally, due to the limited and biased nature of dataset data, expert strategies learned directly from human behavior trajectory demonstrations may be insufficient. Hence, the reward function is defined during the learning process, incorporating collision avoidance and target orientation requirements for multi-agent navigation in decentralized environments. Multiple constraints on agent motion and the application of a knowledge distillation method are also considered.</p>
+<p>Next, a fusion learning algorithm is designed based on a knowledge penetration method, involving two stages: (1) obtaining expert strategies through supervised learning from offline-collected real pedestrian trajectory data; (2) utilizing deep reinforcement learning algorithms to train and generate behavior strategies shared by multiple agents in a multi-agent environment, maximizing the objective function.</p>
+<p>The Proximal Policy Optimization (PPO) algorithm is selected to learn behavior strategies and maximize the objective function using a gradient strategy algorithm. To enhance accuracy in estimating the dominant function, Generalized Dominance Estimation (GAE) is employed. Introducing differential entropy loss aims to encourage intelligent agents to explore the environment extensively, preventing premature convergence in training. The experience replay technique is incorporated to utilize data efficiently, allowing for multiple learning instances from a single tuple, reviewing rare states, and breaking inherent connections between trajectory ancestor data.</p>
+<h2 id="RESULTS-AND-CONCLUSION"><a href="#RESULTS-AND-CONCLUSION" class="headerlink" title="RESULTS AND CONCLUSION:"></a><strong>RESULTS AND CONCLUSION:</strong></h2><p>Performance evaluations of the agents in three simulation environments demonstrate improved navigation capabilities after fusion learning. Success rate, additional distance, and energy efficiency metrics confirm that agents trained with knowledge distillation outperform those relying solely on learning without such training.</p>
 
         </div>
 
@@ -231,7 +231,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2020/06/05/Surgery-Simulation-System-for-Knee-Joint-Replacement/">http://example.com/2020/06/05/Surgery-Simulation-System-for-Knee-Joint-Replacement/</a></span>
+                        <span><a href="http://example.com/2022/05/01/Human-like-Multi-Agent-Navigation-based-on-Knowledge-Distillation/">http://example.com/2022/05/01/Human-like-Multi-Agent-Navigation-based-on-Knowledge-Distillation/</a></span>
                     </p>
                 
                 
@@ -255,7 +255,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/Computer-Vision/"># Computer Vision</a>
+                        <a href="/tags/Machine-Learning/"># Machine Learning</a>
                     
                         
                 </span>
@@ -268,8 +268,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/">Visual Detection of Cells in Brain Tissue Slice for Patch Clamp System</a>
+                <a class="prev" rel="prev" href="/2024/01/02/hello-world/">Hello World</a>
             
+            
+            <a class="next" rel="next" href="/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/">Visual Detection of Cells in Brain Tissue Slice for Patch Clamp System</a>
             
         </section>
 
