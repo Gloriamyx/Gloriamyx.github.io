@@ -74,11 +74,7 @@
                 
                     <a class="menu-item" href="/archives">Projects</a>
                 
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">About Me</a>
                 
                 <input id="switch_default" type="checkbox" class="switch_default">
                 <label for="switch_default" class="toggleBtn"></label>
@@ -99,11 +95,7 @@
                 
                     <a class="menu-item" href="/archives">Projects</a>
                 
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">About Me</a>
                 
             </div>
         </div>
@@ -211,10 +203,19 @@
         </header>
 
         <div class="post-content">
-            <h2 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND:"></a><strong>BACKGROUND:</strong></h2><p>Whole-cell patch clamping is the gold-standard technology for electrical activities recordings of living single cells. Since it is difficult to train patch clamp operators, automatic patch clamp technologies have gained much attention. The key step in fully automated patch clamping is visual detection of cells in brain tissue slice under view of differential interference contrast (DIC) microscope.</p>
-<h2 id="OBJECTIVE"><a href="#OBJECTIVE" class="headerlink" title="OBJECTIVE:"></a><strong>OBJECTIVE:</strong></h2><p>To propose a cell detection method based on DIC images, which includes image classification based on image clarity and visual detection of cells in brain tissue slice based on machine learning.</p>
-<h2 id="METHODS"><a href="#METHODS" class="headerlink" title="METHODS:"></a><strong>METHODS:</strong></h2><p>Firstly, combining the gray features and texture features of DIC images, we define a clarity evaluation function based on principal component analysis (PCA). Afterwards, by using K-Means Algorithm, DIC images can be divided into clear class and blurred class.</p>
-<p>Secondly, we design a neuron detection process based on sliding window and pre-trained classifier to take cell detection in the selected clear images. We finally choose GoogLeNet as classifier in the detection process after comparing the advantages and disadvantages of classification methods based on support vector machine (SVM), AlexNet, VGG and ResNet.</p>
+            <h2 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND:"></a><strong>BACKGROUND:</strong></h2><p>Patch clamp, also known as single-channel current recording technology, is a technique that utilizes the sealing of a glass microelectrode to the cell membrane for the detection and recording of ion currents and conductance in ion channels on the patched membrane.</p>
+<p>The correlation between the onset mechanisms of neurological diseases such as epilepsy, dementia, and cerebrovascular diseases, and ion channels has been widely recognized. Therefore, patch clamp techniques applied to mouse brain slices can assist in researching corresponding diseases.</p>
+<p>As manual patch clamp techniques are challenging to cultivate among technicians, automatic patch clamp technology has become a primary focus of current research. Visual detection of neuronal cells in mouse brain slices is a crucial step for subsequent series of operations.</p>
+<h2 id="OBJECTIVE"><a href="#OBJECTIVE" class="headerlink" title="OBJECTIVE:"></a><strong>OBJECTIVE:</strong></h2><p>To propose a cell detection method based on DIC images, which includes image classification based on image clarity and visual detection of living cells in brain tissue slice based on machine learning.</p>
+<h2 id="METHODS"><a href="#METHODS" class="headerlink" title="METHODS:"></a><strong>METHODS:</strong></h2><h3 id="Collection-of-DIC-Differential-Interference-Contrast-images-of-mouse-brain-slices"><a href="#Collection-of-DIC-Differential-Interference-Contrast-images-of-mouse-brain-slices" class="headerlink" title="Collection of DIC (Differential Interference Contrast) images of mouse brain slices"></a>Collection of DIC (Differential Interference Contrast) images of mouse brain slices</h3><p>The image datasets used in this project were all collected by team members in the laboratory.</p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/exp1.jpg" alt="Experiments"></p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/exp2.jpg" alt="Experiments"></p>
+<h3 id="Brain-slice-image-classification-based-on-image-clarity"><a href="#Brain-slice-image-classification-based-on-image-clarity" class="headerlink" title="Brain slice image classification based on image clarity"></a>Brain slice image classification based on image clarity</h3><p>Combining the gray features and texture features of DIC images, we define a clarity evaluation function based on principal component analysis (PCA). Afterwards, by using K-Means Algorithm, DIC images can be divided into clear class and blurred class.</p>
+<h3 id="Machine-learning-based-detection-of-neural-cells-in-brain-slices"><a href="#Machine-learning-based-detection-of-neural-cells-in-brain-slices" class="headerlink" title="Machine learning based detection of neural cells in brain slices"></a>Machine learning based detection of neural cells in brain slices</h3><p>We design a neuron detection process based on sliding window and pre-trained classifier to take cell detection in the selected clear images. We finally choose GoogLeNet as classifier in the detection process after comparing the advantages and disadvantages of classification methods based on support vector machine (SVM), AlexNet, VGG and ResNet.</p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/slide1.png"></p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/slide2.png"></p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/slide3.jpg"></p>
+<p><img src="https://github.com/Gloriamyx/picture/raw/main/slide3.png"></p>
 <h2 id="RESULTS-AND-CONCLUSION"><a href="#RESULTS-AND-CONCLUSION" class="headerlink" title="RESULTS AND CONCLUSION:"></a><strong>RESULTS AND CONCLUSION:</strong></h2><p>The precision of image classification is 99.1% in test set, which indicates that it can select the images with clear cell contour from a series of DIC images for subsequent processing. The results show that the detected cells are basically operable living cells. The proposed cell detection technology in this project provides an effective visual tool for fully automated patch clamping.</p>
 <p>[Paper link] (<strong><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9588141">https://ieeexplore.ieee.org/document/9588141</a></strong>)</p>
 
@@ -231,20 +232,10 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/">http://example.com/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/</a></span>
+                        <span><a href="http://gloriamyx.github.io/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/">http://gloriamyx.github.io/2021/06/07/Visual-Detection-of-Cells-in-Brain-Tissue-Slice-for-Patch-Clamp-System/</a></span>
                     </p>
                 
                 
-                    <p class="copyright-item">
-                        <span>License:</span>
-                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
-                    </p>
-                
-                
-                     <p class="copyright-item">
-                         <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY</strong>?</span>
-                     </p>
                 
 
             </section>
@@ -268,7 +259,7 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2022/05/01/Human-like-Multi-Agent-Navigation-based-on-Knowledge-Distillation/">Human-like Multi-Agent Navigation based on Knowledge Distillation</a>
+                <a class="prev" rel="prev" href="/2021/08/10/Image-Processing-Research-in-CASIC/">Image Processing Research in CASIC</a>
             
             
             <a class="next" rel="next" href="/2020/06/05/Surgery-Simulation-System-for-Knee-Joint-Replacement/">Surgery Simulation System for Knee Joint Replacement</a>
